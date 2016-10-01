@@ -18,8 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Nz1-oj-VNr">
-                                <frame key="frameInset" minX="128" minY="281" width="119" height="105"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Nz1-oj-VNr">
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eHy-oK-IFO">
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -33,11 +32,11 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZD-jU-DXg">
                                         <state key="normal" title="Search"/>
+                                        <connections>
+                                            <action selector="setDefaultLabelText:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lf2-Ln-MYD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="gk6-M5-kt9" firstAttribute="top" secondItem="eHy-oK-IFO" secondAttribute="bottom" constant="60" id="9eq-gE-OJZ"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -46,6 +45,10 @@
                             <constraint firstItem="Nz1-oj-VNr" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8ng-fQ-QFs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="instruction" destination="eHy-oK-IFO" id="DJS-4b-i37"/>
+                        <outlet property="nameTextField" destination="gk6-M5-kt9" id="vlI-jI-E0H"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
