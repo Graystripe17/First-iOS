@@ -39,9 +39,13 @@
                                         </connections>
                                     </button>
                                     <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="240" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="J5Y-Tk-AED">
+                                        <gestureRecognizers/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="J5Y-Tk-AED" secondAttribute="height" multiplier="1:1" id="TgJ-6v-bxS"/>
                                         </constraints>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="XEm-ZT-55v" appends="YES" id="4ph-Q5-1yk"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                             </stackView>
@@ -55,9 +59,15 @@
                     <connections>
                         <outlet property="instruction" destination="eHy-oK-IFO" id="DJS-4b-i37"/>
                         <outlet property="nameTextField" destination="gk6-M5-kt9" id="vlI-jI-E0H"/>
+                        <outlet property="photoImageView" destination="J5Y-Tk-AED" id="L5b-fW-3fM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="XEm-ZT-55v">
+                    <connections>
+                        <action selector="selectImageFromPhotoLibrary:" destination="BYZ-38-t0r" id="wtR-Yi-Uqh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="130.88455772113943"/>
         </scene>
