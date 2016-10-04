@@ -21,6 +21,7 @@ class RatingControl: UIView {
         
         addSubview(button)
         
+        print("ButtonBooped")
 
         
     }
