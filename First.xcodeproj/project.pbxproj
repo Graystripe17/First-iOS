@@ -14,6 +14,7 @@
 		4F22B1561D90D24D002C3C65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F22B1541D90D24D002C3C65 /* LaunchScreen.storyboard */; };
 		4F22B1611D90D24D002C3C65 /* FirstTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F22B1601D90D24D002C3C65 /* FirstTests.swift */; };
 		4F22B16C1D90D24D002C3C65 /* FirstUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F22B16B1D90D24D002C3C65 /* FirstUITests.swift */; };
+		4F48F5DA1DA33DB90068A5D0 /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F48F5D91DA33DB90068A5D0 /* RatingControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		4F22B1671D90D24D002C3C65 /* FirstUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirstUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F22B16B1D90D24D002C3C65 /* FirstUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstUITests.swift; sourceTree = "<group>"; };
 		4F22B16D1D90D24D002C3C65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4F48F5D91DA33DB90068A5D0 /* RatingControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		4F22B13F1D90D24D002C3C65 = {
 			isa = PBXGroup;
 			children = (
+				4F48F5D91DA33DB90068A5D0 /* RatingControl.swift */,
 				4F22B14A1D90D24D002C3C65 /* First */,
 				4F22B15F1D90D24D002C3C65 /* FirstTests */,
 				4F22B16A1D90D24D002C3C65 /* FirstUITests */,
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4F22B14E1D90D24D002C3C65 /* ViewController.swift in Sources */,
+				4F48F5DA1DA33DB90068A5D0 /* RatingControl.swift in Sources */,
 				4F22B14C1D90D24D002C3C65 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +509,7 @@
 				4F22B1721D90D24D002C3C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F22B1731D90D24D002C3C65 /* Build configuration list for PBXNativeTarget "FirstTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				4F22B1751D90D24D002C3C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4F22B1761D90D24D002C3C65 /* Build configuration list for PBXNativeTarget "FirstUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				4F22B1781D90D24D002C3C65 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
